@@ -15,6 +15,12 @@ def prepare_data(df):
 
 
 def save_model(model, filename):
+    """This will save the trained model
+
+    Args:
+        model (python object): trained model
+        filename (str): Path to save the model
+    """
     model_dir = "models"
     os.makedirs(model_dir, exist_ok=True)  # ONLY CREATE IF MODEL_DIR DOES NOT EXISTS
     filepath = os.path.join(model_dir, filename)  # model/filename
